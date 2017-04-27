@@ -1,0 +1,71 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#editors-playground {
+    display: none;
+}
+
+#guess-the-words {
+    width: 100%;
+}
+
+#guess-the-words div {
+    display: inline;
+
+}
+
+#guess-the-words div {
+    --size: 70px;
+    --color: #0A3A50;
+
+    border: 1px solid transparent;
+    border-color: var(--color);
+    /*box-sizing: content-box;*/
+    color: var(--color);
+    border-radius: 3px;
+    text-indent: 50%;
+    overflow: hidden;
+    background-color: #D4D3D0;
+
+    display: inline-block;
+    text-align: center;
+    margin: 0 3px;
+    width: 50px;
+    font-size: 40px;
+    line-height: var(--size);
+    height: var(--size);
+    transition: text-indent 500ms;
+}
+
+#guess-the-words div:hover {
+    color: #0A3A50;
+}
+h1 {
+  text-align: center;
+  color: #0A3A50;
+}
+#hint{
+  text-align: center;
+  color: #0A3A50;
+}
+.buttons {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 25px;
+}
+button, select {
+  border: none;
+  width: 33.3%;
+  height: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  background-color: #0A3A50;
+  color: white;
+  border-radius: 3px;
+}
+

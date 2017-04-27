@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess the words!</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+    <!-- insert the paragraphs to guess here! -->
+    <div id="editors-playground">
+        <div class="riddle" lang="de">
+            <p class="hint-text">Was ist aus Holz gemacht und kann fliegen?</p>
+            <p class="riddle-text">Papierflugzeug</p>
+        </div>
+        <div class="riddle" lang="de">
+            <p class="hint-text">Sehr lang, aber ohne Schatten</p>
+            <p class="riddle-text">Straße</p>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">Was man beim Einkaufen bezahlen muss (Plural)</div>
+            <div class="riddle-text">Preise</div>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">Der wichtigste Körperteil</div>
+            <div class="riddle-text">Kopf</div>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">nach hinten</div>
+            <div class="riddle-text">rückwärts</div>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">Bestätigung</div>
+            <div class="riddle-text">OK</div>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">Fussbekleidung (Plural)</div>
+            <div class="riddle-text">Schuhe</div>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">kleines rundes grünes Gemüse (Plural)</div>
+            <div class="riddle-text">Erbsen</div>
+        </div>
+        <div class="riddle" lang="de">
+            <div class="hint-text">Was wir einatmen</div>
+            <div class="riddle-text">Luft</div>
+        </div>
+        <div class="riddle" lang="en">
+            <div class="hint-text">Contains a lot of text</div>
+            <div class="riddle-text">Book</div>
+        </div>
+    </div>
+    <h1>Guess the words!</h1>
+    <div id="guess-the-words">
+        <!-- target div -->
+    </div>
+    <p id="hint"></p>
+
+    <div class="buttons">
+        <select name="language" onchange="init()">
+            <option value="de" selected>Deutsch</option>
+            <option value="en">English</option>
+        </select>
+        <button onclick="solve()">Solve</button>
+        <button onclick="reset()">Reset</button>
+    </div>
+</body>
+
+</html>
